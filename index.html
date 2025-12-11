@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resonance</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Resonance</h1>
+
+  <div class="transport">
+    <button id="playBtn">▶</button>
+    <button id="stopBtn">■</button>
+    <div class="time" id="time">00:00 / 00:00</div>
+  </div>
+
+  <div class="tracks-container">
+    <div class="track-labels">
+      <div class="track-label">BASE</div>
+      <div class="track-label brain">BRAIN</div>
+      <div class="track-label climate">CLIMATE</div>
+    </div>
+    <div class="tracks-box">
+      <div class="track"><canvas id="trackBase" width="560" height="50"></canvas></div>
+      <div class="track"><canvas id="trackBrain" width="560" height="50"></canvas></div>
+      <div class="track"><canvas id="trackClimate" width="560" height="50"></canvas></div>
+    </div>
+  </div>
+
+  <div class="scope-section">
+    <div class="scope-box">
+      <canvas id="scopeOverlay" width="560" height="100"></canvas>
+    </div>
+  </div>
+
+  <div class="section-label">Mix</div>
+  <div class="techniques">
+    <button class="tech-btn on" id="baseToggle">Base Track</button>
+    <button class="tech-btn on" id="overtonesToggle">Overtones 🧠</button>
+    <button class="tech-btn on" id="rippleToggle">Water 💧</button>
+  </div>
+
+  <div class="levels-row">
+    <div class="level-meter">
+      <div class="level-label">Overtones</div>
+      <div class="level-bar"><div class="level-fill brain" id="levelOvertones"></div></div>
+    </div>
+    <div class="level-meter">
+      <div class="level-label">Water</div>
+      <div class="level-bar"><div class="level-fill climate" id="levelWater"></div></div>
+    </div>
+  </div>
+
+  <button class="download-btn" id="downloadBtn">⬇ Download WAV</button>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

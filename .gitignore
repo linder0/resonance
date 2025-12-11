@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Audio files (large binaries)
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# Data files (user-specific)
+*.csv
