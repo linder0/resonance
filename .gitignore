@@ -8,12 +8,3 @@
 .vscode/
 *.swp
 *.swo
-
-# Audio files (large binaries)
-*.wav
-*.mp3
-*.ogg
-*.flac
-
-# Data files (user-specific)
-*.csv
